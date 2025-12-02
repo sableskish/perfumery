@@ -1,0 +1,352 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Prosto One",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('fon.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover;
+    color: #3d3d3d;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -100;
+}
+
+header {
+    background: rgba(239, 239, 239, 0.9);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 15px 0;
+}
+
+.header1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header1 a {
+    text-decoration: line-through dashed black 4px;
+    color: #414141;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.header1 a:hover {
+    color: #5a5a5a;
+    text-decoration: underline;
+}
+a{
+    color: #3b2041;
+}
+
+h1 {
+    font-family: 'Rubik Glitch', system-ui;
+    font-size: 3em;
+    text-align: center;
+    margin: 30px 0;
+    color: #414141;
+}
+
+h2 {
+    font-family: "Flow Circular", system-ui;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #727272;
+}
+
+section {
+    background-image: url('sect.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgba(255, 255, 255);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    margin: 5%;
+    padding: 7%;
+    z-index: 100;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.perfume-card {
+    background: rgb(231, 230, 230);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.perfume-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.perfume-image {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(45deg, #ffffff 0%, #ffffff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    color: #414141;
+    position: relative;
+}
+
+.perfume-info {
+    padding: 25px;
+}
+
+.perfume-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #414141;
+    font-family: "Prosto One", sans-serif;
+}
+
+.perfume-brand {
+    color: #727272;
+    font-size: 1em;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.perfume-price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #414141;
+    margin-bottom: 15px;
+    background: linear-gradient(120deg, #b9b9b9 0%, #727272 100%);
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.perfume-description {
+    color: #5a5a5a;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    border-left: 2px solid #E6E6FA;
+    padding-left: 15px;
+}
+
+.view-details {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(243, 243, 243);
+    color: rgb(44, 44, 44);
+    text-decoration: line-through dashed black 4px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    box-shadow: inset 2px 2px 3px rgb(255 255 255 / 0.6),
+                inset -2px -2px 3px rgb(0 0 0 / 0.6);
+}
+
+.view-details:hover {
+    background-color: rgb(6, 4, 7);
+    color: rgb(186, 186, 186);
+    text-decoration: underline;
+}
+
+.view-details:active {
+    background-color: #3b2041;
+    box-shadow: inset -2px -2px 3px rgb(255 255 255 / 0.6),
+                inset 2px 2px 3px rgb(0 0 0 / 0.6);
+}
+
+footer {
+    background: rgba(215, 215, 215, 0.9);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.filters {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+select, input {
+    background-color: #202020;
+    color: #E6E6FA;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: "Prosto One", sans-serif;
+}
+
+select:focus, input:focus {
+    background-color: #f2f2f2;
+    color: #202020;
+    outline: none;
+}
+
+input::placeholder {
+    color: #6c5272;
+}
+
+@media (max-width: 768px) {
+    .catalog-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    section {
+        margin: 3%;
+        padding: 5%;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .perfume-image {
+        height: 200px;
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .header1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Стили для страницы аромата */
+.perfume-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.perfume-image-large {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(45deg, #b9b9b9 0%, #727272 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6em;
+    color: #414141;
+    border-radius: 15px;
+    position: relative;
+}
+
+.perfume-image-large::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(120deg, rgba(185,185,185,0.3) 0%, rgba(114,114,114,0.3) 100%);
+    border-radius: 15px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 12px 25px;
+    background: rgb(243, 243, 243);
+    color: rgb(44, 44, 44);
+    text-decoration: line-through dashed black 4px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: inset 2px 2px 3px rgb(255 255 255 / 0.6),
+                inset -2px -2px 3px rgb(0 0 0 / 0.6);
+}
+
+.back-button:hover {
+    background-color: rgb(6, 4, 7);
+    color: rgb(186, 186, 186);
+    text-decoration: underline;
+}
+
+.notes-section {
+    margin: 25px 0;
+}
+
+.notes-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.note-tag {
+    padding: 8px 15px;
+    background: #F8F8FF;
+    border-radius: 20px;
+    font-size: 0.9em;
+    border-left: 2px solid #E6E6FA;
+}
+
+.buy-button {
+    padding: 15px 30px;
+    background: rgb(243, 243, 243);
+    color: rgb(44, 44, 44);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: inset 2px 2px 3px rgb(255 255 255 / 0.6),
+                inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    margin-top: 20px;
+}
+
+.buy-button:hover {
+    background-color: rgb(6, 4, 7);
+    color: rgb(186, 186, 186);
+}
+
+.buy-button:active {
+    background-color: #3b2041;
+    box-shadow: inset -2px -2px 3px rgb(255 255 255 / 0.6),
+                inset 2px 2px 3px rgb(0 0 0 / 0.6);
+}

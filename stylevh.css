@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prosto One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #3e3838;
+    color: black;
+}
+
+.bg-video {
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -100;
+}
+
+section {
+    font-size:larger;
+    text-align: center;
+    background: rgba(255, 255, 255);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    margin: 30%;
+    padding: 7%;
+    z-index: 100;
+}
